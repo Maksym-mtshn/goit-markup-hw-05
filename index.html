@@ -65,7 +65,7 @@
         <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <div class="btn-hero">
-            <button type="button" class="button" data-modal-open>Заказать услугу</button>
+            <button data-modal-open type="button" class="button">Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -529,9 +529,13 @@
 
     <!-- backdrop -->
     <!-- modal -->
-    <div class="backdrop is-hiden" data-modal>
+  
+    </div> -->
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" data-modal-close>закрити</button>
+        <button data-modal-close aria-label="button" class="close-button">
+          <img src="./images/icons/close.svg" alt="закрити" />
+        </button>
       </div>
     </div>
 
