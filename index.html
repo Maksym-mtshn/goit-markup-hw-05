@@ -65,7 +65,7 @@
         <div class="container hero-container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <div class="btn-hero">
-            <button type="button" class="button">Заказать услугу</button>
+            <button type="button" class="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -526,5 +526,16 @@
         </div>
       </div>
     </footer>
+
+    <!-- backdrop -->
+    <!-- modal -->
+    <div class="backdrop is-hiden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close>закрити</button>
+      </div>
+    </div>
+
+    <!-- js-script -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
