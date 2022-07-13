@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body data-body >
     <!--шапка профиля-->
     <header class="header">
       <div class="container header-container">
@@ -129,13 +129,23 @@
           <h2 class="title projects-title">Чем мы занимаемся</h2>
           <ul class="card-set list">
             <li class="card-set-item">
-              <img width="370" src="./images/activity/box-1.jpg" alt="box1" />
+                <img width="370" src="./images/activity/box-1.jpg" alt="box1" />
+                <div class="projects-text-block">
+                  <p class="projects-text">Десктопные приложения</p>
+                </div>
+            </li>
+            <li class="card-set-item"> 
+                <img width="370" src="./images/activity/box-2.jpg" alt="box2" />
+              <div class="projects-text-block">
+                  <p class="projects-text">Мобильные приложения</p>
+                </div>
             </li>
             <li class="card-set-item">
-              <img width="370" src="./images/activity/box-2.jpg" alt="box2" />
-            </li>
-            <li class="card-set-item">
-              <img width="370" src="./images/activity/box-3.jpg" alt="box3" />
+                <img width="370" src="./images/activity/box-3.jpg" alt="box3" />
+              <div class="projects-text-block">
+                  <p class="projects-text">Дизайнерские решения</p>
+                </div>
+ 
             </li>
           </ul>
         </div>
@@ -534,7 +544,9 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close aria-label="button" class="close-button">
-          <img src="./images/icons/close.svg" alt="закрити" />
+          <svg class="close-icon"width="18" height="18">
+          <use href="./images/icons.svg#close-icon"></use>
+          </svg>
         </button>
       </div>
     </div>
